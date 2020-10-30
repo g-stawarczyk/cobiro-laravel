@@ -11,3 +11,6 @@
    --header 'Content-Type: application/json' \
    --data-raw '{"name":"Lorem name","price":{"amount":123,"currency":"PLN"}}'
 ```
+
+## How to run unit tests
+`vendor/bin/phpunit tests`
