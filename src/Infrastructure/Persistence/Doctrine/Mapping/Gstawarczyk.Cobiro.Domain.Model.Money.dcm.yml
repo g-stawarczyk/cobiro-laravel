@@ -1,0 +1,10 @@
+Gstawarczyk\Cobiro\Domain\Model\Money:
+  type: embeddable
+  fields:
+    amount:
+      type: integer
+      nullable: false
+  embedded:
+    currency:
+      class: Gstawarczyk\Cobiro\Domain\Model\Currency
+      columnPrefix: false

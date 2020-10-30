@@ -1,0 +1,15 @@
+Gstawarczyk\Cobiro\Domain\Model\Product:
+  type: entity
+  repositoryClass: Gstawarczyk\Cobiro\Infrastructure\Persistence\Doctrine\Repository\DoctrineProductRepository
+  table: product
+  id:
+    id:
+      type: string # custom type Uuid
+      generator: { strategy: NONE }
+  fields:
+    name:
+      type: string
+      length: 100
+  embedded:
+    price:
+      class: Gstawarczyk\Cobiro\Domain\Model\Money

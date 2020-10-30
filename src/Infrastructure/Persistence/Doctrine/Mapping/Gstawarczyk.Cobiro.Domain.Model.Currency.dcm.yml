@@ -1,0 +1,7 @@
+Gstawarczyk\Cobiro\Domain\Model\Currency:
+  type: embeddable
+  fields:
+    currency:
+      type: string
+      length: 3
+      nullable: false
