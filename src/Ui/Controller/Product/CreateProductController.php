@@ -36,7 +36,8 @@ class CreateProductController
         $id = $handler->handle($command);
 
         return response()->json(
-            ['id' => $id]
+            ['id' => $id],
+            JsonResponse::HTTP_CREATED
         );
     }
 }
